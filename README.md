@@ -1,3 +1,3 @@
 # Desafio-Globo
 
-POSTMAN Document and Tests endpoints: https://documenter.getpostman.com/view/20045494/UVsMvRoZ
+POSTMAN endpoints tests and documentation: https://documenter.getpostman.com/view/20045494/UVsMvRoZ
