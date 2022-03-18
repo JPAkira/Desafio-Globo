@@ -1,0 +1,64 @@
+.form-box {
+    background-color: #f2f2f2;
+    width: 100%;
+}
+.form-box form {
+    background-color: #ffffff;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-box textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 150px;
+}
+
+.form-box input[type='submit'] {
+    background-color: RGBA(193, 51, 88, 0.8); 
+    color: #f2f2f2;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bolder;
+}
+.form-box label {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+.form-box select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-weight: bolder;
+}
+
+.form-box option {
+    color: black;
+    font-weight: bolder;
+}
+.form-box h1 {
+    font-family: 'Raleway', sans-serif;
+}

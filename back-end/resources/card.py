@@ -1,8 +1,10 @@
+from operator import contains
 from flask_restful import Resource, reqparse
 from models.card import CardModel
 from models.tag import TagModel
 from flask_restful import inputs
 from flask_jwt import jwt_required
+from datetime import datetime
 
 class Card(Resource):
     parser = reqparse.RequestParser()
@@ -34,9 +36,10 @@ class Card(Resource):
 
         if card:
             card.texto = data['texto']
+            card.data_modificacao = datetime.now()
             code = 200
         else:
-            card = CardModel(id, **data)
+            card = CardModel(**data)
             code = 201
 
         card.save_to_db()
@@ -56,7 +59,6 @@ class CardCreate(Resource):
                         action='append'
                         )
 
-    @jwt_required()
     def post(self):
         data = Card.parser.parse_args()
 
@@ -79,3 +81,7 @@ class CardCreate(Resource):
 class CardList(Resource):
     def get(self):
         return {'cards': list(map(lambda x: x.json(), CardModel.query.all()))}
+
+class CardListFilter(Resource):
+    def get(self, tag):
+        return {'cards': list(map(lambda x: x.json(), CardModel.query.filter(CardModel.tags.any(name=tag))))}

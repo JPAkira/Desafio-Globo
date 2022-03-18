@@ -1,0 +1,47 @@
+.card {
+    background-color: #ffffff;
+    margin: 5px;
+    border-radius: 8px;
+    color: RGB(0, 0, 0);
+    font-family: 'Exo 2', sans-serif;
+    font-size: 14px;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card span {
+    padding: 5px;
+    font-size: 10px;
+    color: RGB(237, 77, 119);
+    font-family: 'Exo 2', sans-serif;
+    text-transform: uppercase;
+    border: 1px solid #d7d7d7;
+}
+
+.hideMore {
+    display: none !important;
+}
+
+.card-button-box, .card-filtrar-box {
+    display: flex;
+    justify-content: center;
+}
+
+.card-filtrar-box input {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.card-ver-mais {
+    background-color: #ffffff;
+    border: 0;
+    padding: 10px;
+}

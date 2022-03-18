@@ -6,7 +6,7 @@ class CardModel(db.Model):
     __tablename__ = 'cards'
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    texto = db.Column(db.String(80))
+    texto = db.Column(db.String(400))
     data_criacao = db.Column(db.DateTime, default=datetime.utcnow)
     data_modificacao = db.Column(db.DateTime, default=datetime.utcnow)
     tags = db.relationship('TagModel', lazy='dynamic')
