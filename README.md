@@ -1,3 +1,10 @@
+Project developed to test my knowledge in flask and react
+
+# Requirements
+Python 3.9
+reactjs
+
+
 # Desafio-Globo
 
 POSTMAN endpoints tests and documentation: https://documenter.getpostman.com/view/20045494/UVsMvRoZ
