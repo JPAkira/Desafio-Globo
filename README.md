@@ -28,7 +28,7 @@ insert file path
 example: C:\Users\user\Projetos\myfile.csv
 ```
 
-# CSV FORMAT
+# CSV Format
 text,tag
 Lorem ipsum dolor sit amet., tag1;tag2;tag3
 Mauris fringilla non quam vel lacinia,tag3
