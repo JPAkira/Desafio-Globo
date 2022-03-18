@@ -19,3 +19,17 @@ python app.py
 npm install
 npm run dev
 ```
+
+# Import CSV
+``` 
+python import.py
+insert file path
+
+example: C:\Users\user\Projetos\myfile.csv
+```
+
+# CSV FORMAT
+text,tag
+Lorem ipsum dolor sit amet., tag1;tag2;tag3
+Mauris fringilla non quam vel lacinia,tag3
+Cras in tempus libero,
